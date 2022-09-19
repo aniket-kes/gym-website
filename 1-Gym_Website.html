@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aniket's Gym</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+
+    
+    <style>
+      body {
+        font-family: 'Baloo Bhai 2';
+        margin: 0px;
+        padding: 0px;
+        background: url("img/gym.jpg");
+        color: white;
+      }
+      .left {
+        display: inline-block;
+        position: absolute;
+        top:12px;
+        left: 34px;
+        /* border: 3px solid yellow; */
+    }
+    .left img{
+        width: 88px;
+        filter: invert(100%);
+    }
+    .text{
+        text-align: center;
+        font-size: 14px;
+    }
+
+    .mid {
+        position: sticky;
+        display: block;
+        width: 44%;
+        margin:20px auto;
+        /* border: 3px solid rgb(91, 228, 255); */
+      }
+      .right {
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top:30px;
+        /* border: 3px solid rgb(195, 65, 186); */
+      }
+      .navbar{
+        display: inline-block;
+      }
+      .navbar li{
+        display: inline-block;
+        font-size: 19px;
+      }
+      .navbar li a{
+        color: white;
+        text-decoration: none;
+        padding: 10px 22px;
+        margin: 0px 9px;
+      }
+      .navbar li a:hover, .navbar li a:hover{
+        color: grey;
+        text-decoration: underline;
+      }
+      .btn{
+        padding: 5px 14px;
+        background-color: black;
+        color: white;
+        border: 2px solid grey;
+        border-radius: 15px;
+        font-size: 14px;
+        cursor: pointer;
+        font-family: 'Baloo Bhai 2', cursive;
+      }
+      .btn:hover{
+        background-color: rgb(59, 56, 56);
+      }
+      .container{
+        border:2px solid grey;
+        margin: 82px 148px;
+        padding: 44px 73px;
+        width: 313px;
+        border-radius:12px;
+      }
+      .form-group input{
+        text-align: center;
+        display: inline-block;
+        width: 175px;
+        padding: 2px 76px;
+        margin: 3px auto;
+        border-radius: 10px;
+      }
+      h1{
+        text-align: center;
+      }
+      
+      #btn1 {
+        width: 190px;
+        padding: 0px 34px;
+        margin: 5px 68px;
+      }
+      
+    </style>
+  </head>
+  <body>
+    <header class="header">
+        <div class="left">
+            <img src="img/logo.png" alt="Couldn't load image">
+            <div class="text">
+                Aniket Fitness
+            </div>
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn">
+                Call us Now
+            </button>
+            <button class="btn">
+                Email us
+            </button>
+        </div>
+      
+    </header>
+    <div class="container">
+        <h1>Join Today to stay fit</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="number" placeholder="Enter your Phone number">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Locality">
+            </div>
+            <button class="btn" id="btn1">
+                Submit
+            </button>
+        </form>
+    </div>
+  </body>
+</html>
